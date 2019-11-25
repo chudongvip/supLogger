@@ -1,0 +1,17 @@
+{
+  "name": "suplogger",
+  "version": "0.0.1",
+  "description": "A simple logging library that provides log upload middleware.",
+  "main": "./release/supLogger",
+  "scripts": {
+    "build": "webpack"
+  },
+  "author": "https://github.com/chudongvip",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}

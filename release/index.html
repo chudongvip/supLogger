@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <script src="./supLogger.js"></script>
+  <script>
+    //设置日志级别
+    supLogger.setLogLevel(supLogger.DEBUG);
+
+    //中间件
+    supLogger.use((data, next) => {
+      console.log(data);
+      //日志上传或其他操作
+      //TODO list
+
+      //是否继续执行
+      next();
+    });
+
+    //输出错误级别的日志
+    supLogger.error('null null');
+  </script>
+  
+</body>
+</html>

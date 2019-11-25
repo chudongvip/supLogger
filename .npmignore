@@ -1,0 +1,8 @@
+dist
+node_modules
+src
+
+.gitignore
+package-lock.json
+tsconfig.json
+webpack.config.js
