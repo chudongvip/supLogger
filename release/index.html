@@ -8,10 +8,13 @@
 </head>
 <body>
 
-  <script src="./supLogger.js"></script>
+  <script src="./SupLogger.js"></script>
   <script>
+    var supLogger = new SupLogger();
+
     //设置日志级别
     supLogger.setLogLevel(supLogger.DEBUG);
+    // supLogger.setLogLevel(supLogger.DEBUG, "[awsome SDK]");
 
     //中间件
     supLogger.use((data, next) => {
@@ -24,7 +27,10 @@
     });
 
     //输出错误级别的日志
-    supLogger.error('null null');
+    supLogger.warning('warning null');
+    supLogger.error('error null');
+    supLogger.info('info null');
+    supLogger.debug('debug null');
   </script>
   
 </body>

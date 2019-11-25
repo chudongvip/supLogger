@@ -5,8 +5,8 @@ module.exports = {
   entry: './src/logger.ts',
   output: {
     path: path.resolve(__dirname, './release'),
-    filename: 'supLogger.js',
-    library: "supLogger",
+    filename: 'SupLogger.js',
+    library: "SupLogger",
     libraryTarget: "umd",
     libraryExport: "default"
   },
