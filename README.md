@@ -2,7 +2,6 @@
 
 A simple logging library that provides log upload middleware. 
 
-test
 
 
 ## Getting help?
